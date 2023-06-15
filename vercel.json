@@ -1,20 +1,15 @@
 {
-
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "api/main.py"
-        }
-    ],
-    "build": {
-        
-          "api/**/main.py": {
-            "excludeFiles": "public/**, testdata/**, out/**, etc/**"
-          },
-          
-          "src":"api/main.py",
-          "use":"@vercel/python"
-          
-        }
-      
+  "builds": [
+      {
+          "src": "api/main.py",
+          "use": "@vercel/python"
+      }
+  ],
+  "routes": [
+      {
+          "src": "/(.*)",
+          "dest": "api/main.py"
+      }
+  ]
 }
+
