@@ -6,7 +6,7 @@
             "dest": "api/main.py"
         }
     ],
-    "functions": {
+    "build": {
         
           "api/**/main.py": {
             "excludeFiles": "public/**, testdata/**, out/**, etc/**"
