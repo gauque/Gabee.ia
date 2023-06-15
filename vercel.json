@@ -10,13 +10,11 @@
             "src": "/(.*)",
             "dest": "api/main.py"
         }
-    ]
-
-    {
-        "functions": {
+    ],
+    "functions": {
           "api/**/main.py": {
-            "excludeFiles": "public/**"
+            "excludeFiles": "public/**, testdata/**, out/**, etc/**"
           }
         }
-      }
+      
 }
