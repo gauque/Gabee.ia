@@ -1,10 +1,5 @@
 {
-    "builds": [
-        {
-            "src": "api/main.py",
-            "use": "@vercel/python"
-        }
-    ],
+
     "routes": [
         {
             "src": "/(.*)",
@@ -12,9 +7,14 @@
         }
     ],
     "functions": {
+        
           "api/**/main.py": {
             "excludeFiles": "public/**, testdata/**, out/**, etc/**"
-          }
+          },
+          
+          "src":"api/main.py",
+          "use":"@vercel/python"
+          
         }
       
 }
